@@ -21,9 +21,9 @@
 			  </div>
 			  
 			  <div class="form-group">
-				<label for="nombre" class="col-sm-3 control-label">Nombre</label>
+				<label for="nombre" class="col-sm-3 control-label">Nombre / SN</label>
 				<div class="col-sm-8">
-					<textarea class="form-control" id="nombre" name="nombre" placeholder="Nombre del producto" required maxlength="255" ></textarea>
+					<textarea class="form-control" id="nombre" name="nombre" placeholder="Nombre del producto / Numero de serie" required maxlength="255" ></textarea>
 				  
 				</div>
 			  </div>
@@ -48,12 +48,12 @@
 			<div class="form-group">
 				<label for="precio" class="col-sm-3 control-label">Precio</label>
 				<div class="col-sm-8">
-				  <input type="text" class="form-control" id="precio" name="precio" placeholder="Precio de venta del producto" required pattern="^[0-9]{1,5}(\.[0-9]{0,2})?$" title="Ingresa sólo números con 0 ó 2 decimales" maxlength="8">
+				  <input type="text" class="form-control" id="precio" name="precio" placeholder="Precio de compra del producto" required pattern="^[0-9]{1,5}(\.[0-9]{0,2})?$" title="Ingresa sólo números con 0 ó 2 decimales" maxlength="8">
 				</div>
 			</div>
 			
 			<div class="form-group">
-				<label for="stock" class="col-sm-3 control-label">Stock</label>
+				<label for="stock" class="col-sm-3 control-label">cantidad</label>
 				<div class="col-sm-8">
 				  <input type="number" min="0" class="form-control" id="stock" name="stock" placeholder="Inventario inicial" required  maxlength="8">
 				</div>

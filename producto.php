@@ -1,9 +1,5 @@
 <?php
-	/*-------------------------
-	Autor: Obed Alvarado
-	Web: obedalvarado.pw
-	Mail: info@obedalvarado.pw
-	---------------------------*/
+
 	session_start();
 	if (!isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] != 1) {
         header("location: login.php");
@@ -18,7 +14,7 @@
 	$active_productos="active";
 	$active_clientes="";
 	$active_usuarios="";	
-	$title="Producto | Simple Stock";
+	$title="Producto | Simple Inventario";
 	
 	if (isset($_POST['reference']) and isset($_POST['quantity'])){
 		$quantity=intval($_POST['quantity']);
@@ -104,13 +100,13 @@
                     <div class="col-sm-12 margin-btm-10">
                     </div>
                     <div class="col-sm-12">
-                      <span class="current-stock">Stock disponible</span>
+                      <span class="current-stock">Cantidad disponible</span>
                     </div>
                     <div class="col-sm-12 margin-btm-10">
                       <span class="item-quantity"><?php echo number_format($row['stock'],2);?></span>
                     </div>
 					<div class="col-sm-12">
-                      <span class="current-stock"> Precio venta  </span>
+                      <span class="current-stock"> Precio Compra  </span>
                     </div>
 					<div class="col-sm-12">
                       <span class="item-price">$ <?php echo number_format($row['precio_producto'],2);?></span>
@@ -119,10 +115,10 @@
                     <div class="col-sm-12 margin-btm-10">
 					</div>
                     <div class="col-sm-6 col-xs-6 col-md-4 ">
-                      <a href="" data-toggle="modal" data-target="#add-stock"><img width="100px"  src="img/stock-in.png"></a>
+                      <a href="" data-toggle="modal" data-target="#add-stock"><img width="100px"  src="img/btnmas.png"></a>
                     </div>
                     <div class="col-sm-6 col-xs-6 col-md-4">
-                      <a href="" data-toggle="modal" data-target="#remove-stock"><img width="100px"  src="img/stock-out.png"></a>
+                      <a href="" data-toggle="modal" data-target="#remove-stock"><img width="100px"  src="img/btnmenos.png"></a>
                     </div>
                     <div class="col-sm-12 margin-btm-10">
                     </div>

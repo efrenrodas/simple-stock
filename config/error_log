@@ -1,0 +1,1 @@
+[13-Jun-2021 03:53:36 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/irfecueng/inventarios.irfeyalext03cuenca.org/config/conexion.php on line 10
